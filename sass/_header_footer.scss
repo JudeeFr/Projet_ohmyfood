@@ -31,7 +31,7 @@
     @media (min-width: 768px) {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: end;
+        justify-content: flex-end;
         gap: 50px;
         padding: 60px 20%;
     }   

@@ -1,4 +1,4 @@
-// section title 
+
 .title {
     text-align: center;
     padding: 50px;
@@ -8,14 +8,13 @@
         padding-bottom: 40px;
     }
     h1 {
+        padding: 0 60px;
         @media (min-width: 768px) {
         font-size: 40px;
         } 
     }
 }
-     
-
-
+ 
 .fonctionnement {
     padding: 40px 5px;
     display: flex;
@@ -32,23 +31,22 @@
         }
 }
 
-
 .restaurants {
     background-color: #F6F6F6;
     padding: 50px 5px;   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    
+    cursor: pointer;     
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }  
         @media (min-width: 768px) {                
             margin: 0 auto;
             align-items: start;
             padding: 50px 20% 80px 20%;
-            &__container {
-                
-                display: flex;
+            &__container {               
+                display: flex;               
                 flex-direction: row;
                 justify-content: space-between;
                 gap: 10px;           

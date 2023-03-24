@@ -30,10 +30,9 @@
   background-color: #F5EDFF;
   cursor: pointer;
 }
-.card-fonctionnement:hover .card-fonctionnement__icone {
+.card-fonctionnement:hover i {
   color: #9356DC;
 }
-
 .card-fonctionnement__number {
   background-color: #9356DC;
   border-radius: 50%;
@@ -110,6 +109,9 @@
   padding-top: 10px;
   padding-bottom: 40px;
 }
+.title h1 {
+  padding: 0 60px;
+}
 @media (min-width: 768px) {
   .title h1 {
     font-size: 40px;
@@ -137,11 +139,13 @@
 .restaurants {
   background-color: #F6F6F6;
   padding: 50px 5px;
+  cursor: pointer;
+}
+.restaurants__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
 }
 @media (min-width: 768px) {
   .restaurants {
@@ -188,7 +192,7 @@
   .section-footer {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 50px;
     padding: 60px 20%;
   }
