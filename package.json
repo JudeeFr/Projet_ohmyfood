@@ -1,0 +1,17 @@
+{
+  "name": "projet_ohmyfood",
+  "version": "1.0.0",
+  "description": "site web mobile firt entreprise \"ohmyfood\" - commande de repas en ligne.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:public/css/styles.css",
+    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JudeeFr/Projet_ohmyfood"
+  },
+  "author": "Jennifer Besson",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

@@ -1,0 +1,79 @@
+// cards section fonctionnement 
+
+.card-fonctionnement {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px 30px;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 0px rgb(211, 211, 211);
+    
+        &:hover {
+            background-color: #F5EDFF;
+            cursor: pointer;
+            .card-fonctionnement__icone {
+                color: $primary-color;
+            }
+        }
+}
+.card-fonctionnement__number {
+    background-color: $primary-color;
+    border-radius: 50%;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    left: -30px;
+    padding: 2px 7px;
+    position: relative;
+}
+
+// cards section restaurants 
+
+.card-restaurants {    
+    width: 335px ;
+    height: 250px;
+    border-radius: 20px;
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-top: 33px;
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            padding: 13px;
+        }
+        &__icone {
+            padding: 10px;
+            font-size: 21px;
+                &:hover {
+                    color: $primary-color;
+                }           
+        }   
+        &__title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.7rem;
+        }    
+        img {
+            position: relative;
+            object-fit: cover;
+            width: 335px ;
+            height: 170px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        span {
+            position: absolute;
+            background-color: $tertiary-color;
+            padding: 5px 15px;
+            right: 20px;
+            top: 20px;
+            border-radius: 5px;
+            color:#008766;
+            font-size: 14px;
+            font-weight: 500;
+        }
+}
+
+

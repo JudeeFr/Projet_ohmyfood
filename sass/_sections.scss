@@ -1,0 +1,36 @@
+// section title 
+.title {
+    text-align: center;
+    padding: 50px;
+    background-color: #F6F6F6;
+    p {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+}
+
+// section fonctionnement 
+
+.fonctionnement {
+    padding: 40px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+
+// section restaurants 
+
+.restaurants {
+    background-color: #F6F6F6;
+    padding: 50px 5px;    
+}
+
+.section-cards-restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}   
