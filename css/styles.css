@@ -142,6 +142,32 @@
   gap: 20px;
 }
 
+.section-footer {
+  background-color: #353535;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-footer {
+  font-family: "Shrikhand", cursive;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.footer-menu-1, .footer-menu-2, a {
+  display: flex;
+}
+.footer-menu-1 i, .footer-menu-2 i, a i {
+  padding-right: 10px;
+}
+
+.footer-menu-1, .footer-menu-2, .footer-menu-3, .footer-menu-4, a, i, p {
+  color: white;
+  padding-top: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;

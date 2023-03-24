@@ -4,7 +4,7 @@
   "description": "site web mobile firt entreprise \"ohmyfood\" - commande de repas en ligne.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/main.scss:public/css/styles.css",
+    "sass": "sass --watch sass/main.scss:css/styles.css",
     "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
