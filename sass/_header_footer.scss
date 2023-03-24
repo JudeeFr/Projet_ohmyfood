@@ -27,22 +27,20 @@
 .section-footer {
     background-color: #353535;
     color: white;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
+    padding: 30px;  
 }
+
 .logo-footer {
     font-family: $font-title;
     font-size: 22px;
     padding-bottom: 20px;
 }
-.footer-menu-1, .footer-menu-2, a {
-    display: flex;
-    i {
-        padding-right: 10px ;
+
+.footer-menu  {   
+    padding-top: 10px;   
+    &__flex  {
+        display: flex;
+        gap: 10px;
+        @extend .footer-menu;
     }
-}
-.footer-menu-1, .footer-menu-2, .footer-menu-3, .footer-menu-4, a, i, p {
-    color : white;
-    padding-top: 5px;
 }

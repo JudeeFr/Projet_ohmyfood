@@ -146,8 +146,6 @@
   background-color: #353535;
   color: white;
   padding: 30px;
-  display: flex;
-  flex-direction: column;
 }
 
 .logo-footer {
@@ -156,16 +154,12 @@
   padding-bottom: 20px;
 }
 
-.footer-menu-1, .footer-menu-2, a {
+.footer-menu, .footer-menu__flex {
+  padding-top: 10px;
+}
+.footer-menu__flex {
   display: flex;
-}
-.footer-menu-1 i, .footer-menu-2 i, a i {
-  padding-right: 10px;
-}
-
-.footer-menu-1, .footer-menu-2, .footer-menu-3, .footer-menu-4, a, i, p {
-  color: white;
-  padding-top: 5px;
+  gap: 10px;
 }
 
 * {
