@@ -12,7 +12,7 @@
   margin: auto;
 }
 .btn__violet:hover {
-  background: linear-gradient(173deg, #ff9ce3, #a77bdc);
+  background: linear-gradient(187deg, #a77bdc, #ff9ce3);
   box-shadow: 0px 5px 5px 0px rgb(77, 76, 76);
 }
 
@@ -217,6 +217,59 @@
   gap: 10px;
 }
 
+.logo-pages {
+  width: 100%;
+  height: 60px;
+}
+.logo-pages img {
+  display: block;
+  margin: auto;
+  padding-top: 10px;
+}
+.logo-pages i {
+  position: absolute;
+  padding: 20px;
+}
+
+.banniere-image {
+  width: 100%;
+  margin: 0 auto;
+  height: 275px;
+  background-image: url("/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+}
+
+.menu {
+  background-color: #F6F6F6;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  top: -40px;
+  z-index: 10;
+  position: relative;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.menu-title h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+}
+
+.menu-subtitle {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.menu-subtitle::after {
+  content: "";
+  background: #99E2D0;
+  width: 100px;
+  height: 4px;
+  display: block;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -260,24 +313,6 @@ h2 {
 h3 {
   font-size: 16px;
   font-weight: 700;
-}
-
-.page-title {
-  font-family: "Shrikhand", cursive;
-  font-size: 28px;
-  font-weight: 400;
-}
-
-.titre-menu {
-  text-transform: capitalize;
-  font-size: 16px;
-}
-.titre-menu::after {
-  content: "";
-  background: #99E2D0;
-  width: 100px;
-  height: 4px;
-  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */

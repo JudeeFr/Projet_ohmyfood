@@ -4,6 +4,7 @@
 @import "_cards";
 @import "sections";
 @import "_header_footer";
+@import "_pages";
 
 
 * {
@@ -49,19 +50,4 @@ h3 {
     font-size: 16px;
     font-weight: 700;
 }
-.page-title {
-    font-family: $font-title;
-    font-size: 28px;
-    font-weight: 400;
-}
-.titre-menu {
-    text-transform: capitalize;
-    font-size: 16px;
-    &::after {
-        content: '';
-        background: $tertiary-color;
-        width: 100px;
-        height: 4px;
-        display: block;
-    }
-}
+
