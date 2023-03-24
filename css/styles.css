@@ -19,7 +19,7 @@
 .card-fonctionnement {
   display: flex;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 20px;
   padding: 20px;
   margin: 20px 30px;
   background-color: #F6F6F6;
@@ -99,6 +99,11 @@
   padding-top: 10px;
   padding-bottom: 40px;
 }
+@media (min-width: 768px) {
+  .title h1 {
+    font-size: 40px;
+  }
+}
 
 .fonctionnement {
   padding: 40px 5px;
@@ -106,18 +111,39 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .fonctionnement {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .fonctionnement__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
 
 .restaurants {
   background-color: #F6F6F6;
   padding: 50px 5px;
-}
-
-.section-cards-restaurants {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .restaurants {
+    margin: 0 auto;
+    align-items: start;
+    padding: 50px 20% 80px 20%;
+  }
+  .restaurants__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
 }
 
 .logo {
@@ -147,11 +173,25 @@
   color: white;
   padding: 30px;
 }
+@media (min-width: 768px) {
+  .section-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    gap: 50px;
+    padding: 60px 20%;
+  }
+}
 
 .logo-footer {
   font-family: "Shrikhand", cursive;
   font-size: 22px;
   padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .logo-footer {
+    padding: 0;
+  }
 }
 
 .footer-menu, .footer-menu__flex {
@@ -170,7 +210,6 @@
 
 .main-container {
   width: 100%;
-  max-width: 768px;
   min-width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -178,7 +217,13 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
+}
+a:hover {
+  color: #99E2D0;
+}
+a:visited {
+  color: inherit;
 }
 
 p {

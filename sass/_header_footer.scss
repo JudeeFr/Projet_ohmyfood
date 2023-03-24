@@ -27,13 +27,23 @@
 .section-footer {
     background-color: #353535;
     color: white;
-    padding: 30px;  
+    padding: 30px;
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        gap: 50px;
+        padding: 60px 20%;
+    }   
 }
 
 .logo-footer {
     font-family: $font-title;
     font-size: 22px;
     padding-bottom: 20px;
+    @media (min-width: 768px) {
+        padding: 0;
+    }  
 }
 
 .footer-menu  {   
@@ -44,3 +54,4 @@
         @extend .footer-menu;
     }
 }
+

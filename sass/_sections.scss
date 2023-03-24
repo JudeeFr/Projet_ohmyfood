@@ -7,30 +7,54 @@
         padding-top: 10px;
         padding-bottom: 40px;
     }
+    h1 {
+        @media (min-width: 768px) {
+        font-size: 40px;
+        } 
+    }
 }
+     
 
-// section fonctionnement 
 
 .fonctionnement {
     padding: 40px 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
+        @media (min-width: 768px) {      
+           width: 60%;
+           margin: 0 auto;
+            &__container {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;           
+            }        
+        }
 }
 
-
-// section restaurants 
 
 .restaurants {
     background-color: #F6F6F6;
-    padding: 50px 5px;    
-}
-
-.section-cards-restaurants {
+    padding: 50px 5px;   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-}   
+    
+        @media (min-width: 768px) {                
+            margin: 0 auto;
+            align-items: start;
+            padding: 50px 20% 80px 20%;
+            &__container {
+                
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 10px;           
+            }        
+            
+        } 
+}
+
+  
