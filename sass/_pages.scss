@@ -10,13 +10,23 @@
     i {
         position: absolute;
         padding: 20px;
+        &:hover{
+            color: $primary-color;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 5px 5px 0px rgb(77, 76, 76);
+        }
     }
 }
-.banniere-image {
+.banner {
     width: 100%;
     margin: 0 auto;
     height: 275px;
-    background-image: url("/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: cover;
 }
 
@@ -24,30 +34,52 @@
     background-color: #F6F6F6;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
-    top: -40px;
+    margin-top: -40px;   
     z-index: 10;
     position: relative;
+    padding-bottom: 50px;
+    .btn__violet {
+        width: 150px;
+        margin-top: 40px;
+    }
 }
 .menu-title  {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 30px ;
+    justify-content: space-around;
+    padding: 20px 20px 10px 10px ;
+    align-items: center;
     h1 {
         font-family: $font-title;
         font-size: 28px;
+        font-weight: 400;
     }
     
     
 }
 
-.menu-subtitle {
-    text-transform: capitalize;
+.menu-subtitle h2 {
+    text-transform: uppercase;
     font-size: 16px;
+    font-weight: 300;
+    padding: 20px 10px;
+    line-height: 2em;
     &::after {
         content: '';
         background: $tertiary-color;
-        width: 100px;
+        width: 40px;
         height: 4px;
         display: block;
     }
 }
+.menu-plats {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.menu-plats-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: FadeIn 1s ;
+}
+

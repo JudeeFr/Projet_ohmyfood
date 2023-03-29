@@ -5,12 +5,14 @@
 @import "sections";
 @import "_header_footer";
 @import "_pages";
+@import "_animations";
 
 
 * {
     margin: 0;
     padding: 0;
     font-family: $font-text;
+    box-sizing: border-box;
 }
 .main-container {
     width: 100%;
@@ -23,9 +25,6 @@ a {
     color: inherit;
     &:hover {
         color: $primary-color;
-    }
-    &:visited {
-        color: inherit;
     }
 }
 
@@ -43,11 +42,11 @@ h1 {
 
 h2 {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 }
 

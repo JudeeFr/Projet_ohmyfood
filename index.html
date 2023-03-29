@@ -46,33 +46,30 @@
 
     <section class="fonctionnement">
         <div class="fonctionnement__title">
-            <h1>Fonctionnement</h1>
+            <h2>Fonctionnement</h2>
         </div>
         
         <div class="fonctionnement__container">
-            <article class="card-fonctionnement">
-                <div class="card-fonctionnement__number">1</div>
+            <div class="card-fonctionnement" data-count="1">
                 <div class="card-fonctionnement__icone">
                     <i class="fa-solid fa-mobile-screen-button"></i>
                 </div>
                 <div class="card-fonctionnement-text">Choisissez un restaurant</div>
-            </article>
+            </div>
 
-            <article class="card-fonctionnement">
-                <div class="card-fonctionnement__number">2</div>
+            <div class="card-fonctionnement" data-count="2">
                 <div class="card-fonctionnement__icone">
                     <i class="fa-solid fa-list-ul"></i>
                 </div>
                 <div class="card-fonctionnement-text">Composez votre menu</div>
-            </article>
+            </div>
 
-            <article class="card-fonctionnement">
-                <div class="card-fonctionnement__number">3</div>
+            <div class="card-fonctionnement" data-count="3">
                 <div class="card-fonctionnement__icone">
                     <i class="fa-sharp fa-solid fa-store"></i>
                 </div>
                 <div class="card-fonctionnement-text">Dégustez au restaurant</div>
-            </article>
+            </div>
         </div>
 
     </section>
@@ -80,33 +77,35 @@
     <section class="restaurants">
 
         <div class="restaurants__title">
-            <h1>Restaurants</h1>
+            <h2>Restaurants</h2>
         </div>
 
         <div class="restaurants__container">
 
-            <a href="la_palette_du_gout.html"><article class="card-restaurants">
-                <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-                <span>Nouveau</span>
-                <div class="card-restaurants__content">
-                    <div class="card-restaurants-text">
-                        <div class="card-restaurants__title">La palette du goût</div>
-                        <div class="card-restaurants__subtitle">Ménilmontant</div>
+            <a href="la_palette_du_gout.html">
+                <article class="card-restaurants">
+                    <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                    <span>Nouveau</span>
+                    <div class="card-restaurants__content">
+                        <div class="card-restaurants-text">
+                            <div class="card-restaurants__title"><h3>La palette du goût</h3></div>
+                            <div class="card-restaurants__subtitle">Ménilmontant</div>
+                        </div>
+                        
+                        <div class="card-restaurants__icone">
+                            <i class="fa-regular fa-heart heart-empty"></i>
+                            <i class="fa-solid fa-heart heart-full"></i>
+                        </div>
                     </div>
-                    
-                    <div class="card-restaurants__icone">
-                        <i class="fa-regular fa-heart heart-empty"></i>
-                        <i class="fa-solid fa-heart heart-full"></i>
-                    </div>
-                </div>
-            </article></a>
+                </article>
+            </a>
 
             <a href="la_note_enchantee.html"><article class="card-restaurants">
                 <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
                 <span>Nouveau</span>
                 <div class="card-restaurants__content">
                     <div class="card-restaurants-text">
-                        <div class="card-restaurants__title">La note enchantée</div>
+                        <div class="card-restaurants__title"><h3>La note enchantée</h3></div>
                         <div class="card-restaurants__subtitle">Charonne</div>
                     </div>
                     
@@ -121,7 +120,7 @@
                 <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
                 <div class="card-restaurants__content">
                     <div class="card-restaurants-text">
-                        <div class="card-restaurants__title">À la française</div>
+                        <div class="card-restaurants__title"><h3>À la française</h3></div>
                         <div class="card-restaurants__subtitle">Cité Rouge</div>
                     </div>
                     
@@ -136,7 +135,7 @@
                 <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
                 <div class="card-restaurants__content">
                     <div class="card-restaurants-text">
-                        <div class="card-restaurants__title">Le délice des sens</div>
+                        <div class="card-restaurants__title"><h3>Le délice des sens</h3></div>
                         <div class="card-restaurants__subtitle">Folie-Méricourt</div>
                     </div>
                     
@@ -151,7 +150,7 @@
     </section>
 
     <footer>
-        <section class="section-footer">
+        <div class="section-footer">
             <div class="logo-footer">ohmyfood</div>
             
             <a href="#"><div class="footer-menu__flex">   
@@ -169,7 +168,7 @@
                     <p>Contact</p>               
             </div></a>
             
-        </section>
+        </div>
     </footer>
 </div>
 </body>
