@@ -2,12 +2,25 @@
 .card-fonctionnement {
     display: flex;
     justify-content: flex-start;
-    gap: 20px;
-    padding: 20px;
+    gap: 25px;
+    padding: 20px 40px 20px 0;
     margin: 20px 30px;
-    background-color: #F6F6F6;
+    background-color: hsl(0, 0%, 96%);
     border-radius: 15px;
-    box-shadow: 0px 5px 5px 0px rgb(211, 211, 211);       
+    box-shadow: 0px 5px 5px 0px rgb(211, 211, 211); 
+
+        &::before {
+            content: attr(data-count);
+            position: relative;  
+            left: -10px;   
+            background: $primary-color;
+            border-radius: 50%;
+            color: white;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;           
+        }             
         &:hover {
             background-color: #F5EDFF;
             cursor: pointer;   
@@ -15,16 +28,6 @@
                     color: $primary-color;        
                 }               
         }
-        &__number {
-            background-color: $primary-color;
-            border-radius: 50%;
-            color: white;
-            font-size: 14px;
-            font-weight: 500;
-            left: -30px;
-            padding: 2px 7px;
-            position: relative;
-        } 
     }   
 
 .card-restaurants {    
@@ -37,11 +40,13 @@
         &__content {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 13px;
         }
         &__icone {
-            padding: 10px 20px 30px 0px;
-            font-size: 21px;
+            padding: 0px 40px 30px 0px;
+            font-size: 24px;
+            cursor: pointer;
             i {
                 position: absolute;
             }          
@@ -74,12 +79,45 @@
 
 .heart-full {
     opacity: 0;
-    transition: all 1.2s;
+    transition: all 1.2s ease-out;
     
     &:hover {
         opacity: 1;
         background-image: $btn-violet;
         -webkit-background-clip: text;
         color: transparent;
+    }
+}
+
+.menu-plats-cards {
+    background-color: white;
+    margin: 0 10px;
+    padding: 15px 25px 15px 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;   
+    animation: Check 2s;
+    &__content {
+        display: flex;      
+        justify-content: space-between;
+        line-height: 1.5em;    
+    }  
+    &__subtitle {
+        width: 75%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        flex-wrap: nowrap;
+       } 
+}
+@keyframes Check {
+    0% {
+        background-color: $tertiary-color;
+        transform: scale(0);
+        content: ""
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
