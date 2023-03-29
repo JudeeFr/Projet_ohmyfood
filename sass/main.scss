@@ -1,18 +1,19 @@
-@import "./base/base";
+@use "utils/variables";
+@import "base/base";
 
-@import "./utils/variables";
-@import "./utils/mixins";
-@import "./utils/animations";
 
-@import "./components/buttons";
-@import "./components/cards";
-@import "./components/plats";
-@import "./components/steps";
-@import "./components/titles";
+@import "utils/mixins";
+@import "utils/animations";
 
-@import "./layouts/footer";
-@import "./layouts/header";
+@import "components/buttons";
+@import "components/cards";
+@import "components/plats";
+@import "components/steps";
+@import "components/titles";
 
-@import "./pages/home";
-@import "./pages/restaurants";
+@import "layouts/footer";
+@import "layouts/header";
+
+@import "pages/home";
+@import "pages/restaurants";
 

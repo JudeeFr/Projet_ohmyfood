@@ -37,7 +37,7 @@
         }
         span {
             position: absolute;
-            background-color: $tertiary-color;
+            background-color: variables.$tertiary-color;
             padding: 5px 15px;
             right: 20px;
             top: 20px;
@@ -54,7 +54,7 @@
     
     &:hover {
         opacity: 1;
-        background-image: $btn-violet;
+        background-image: variables.$btn-violet;
         -webkit-background-clip: text;
         color: transparent;
     }
