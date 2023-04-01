@@ -1,15 +1,13 @@
-@use "utils/variables";
+
 @import "base/base";
-
-
-@import "utils/mixins";
-@import "utils/animations";
 
 @import "components/buttons";
 @import "components/cards";
 @import "components/plats";
-@import "components/steps";
+@import "components/fonctionnement";
 @import "components/titles";
+@import "components/heart";
+@import "components/loader";
 
 @import "layouts/footer";
 @import "layouts/header";

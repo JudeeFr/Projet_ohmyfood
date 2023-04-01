@@ -1,19 +1,21 @@
+@use "../utils/" as *;
 
 .card-fonctionnement {
     display: flex;
     justify-content: flex-start;
-    gap: 25px;
+    align-items: center;
+    gap: 25px;   
     padding: 20px 40px 20px 0;
     margin: 20px 30px;
-    background-color: hsl(0, 0%, 96%);
+    background-color: #F6F6F6;
     border-radius: 15px;
     box-shadow: 0px 5px 5px 0px rgb(211, 211, 211); 
-
+    
         &::before {
             content: attr(data-count);
             position: relative;  
             left: -10px;   
-            background: variables.$primary-color;
+            background: $primary-color;
             border-radius: 50%;
             color: white;
             width: 25px;
@@ -25,7 +27,10 @@
             background-color: #F5EDFF;
             cursor: pointer;   
                 i {
-                    color: variables.$primary-color;        
+                    color: $primary-color;        
                 }               
+        }
+        &__text {
+            font-weight: 600;
         }
     }   

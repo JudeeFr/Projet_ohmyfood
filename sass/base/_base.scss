@@ -1,8 +1,9 @@
+@use "../utils/" as *;
 
 * {
     margin: 0;
     padding: 0;
-    font-family: variables.$font-text;
+    font-family: $font-text;
     box-sizing: border-box;
 }
 .main-container {
@@ -15,7 +16,7 @@ a {
     text-decoration: none;
     color: inherit;
     &:hover {
-        color: variables.$primary-color;
+        color: $primary-color;
     }
 }
 

@@ -1,0 +1,13 @@
+@use "../utils/" as *;
+
+.heart-full {
+    opacity: 0;
+    transition: all 1.2s ease-out;
+    
+    &:hover {
+        opacity: 1;
+        background-image: $btn-violet;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}

@@ -1,5 +1,5 @@
 
-
+@use "../utils/" as *;
 
 .card-restaurants {    
     width: 335px ;
@@ -37,7 +37,8 @@
         }
         span {
             position: absolute;
-            background-color: variables.$tertiary-color;
+            display: block;
+            background-color: $tertiary-color;
             padding: 5px 15px;
             right: 20px;
             top: 20px;
@@ -46,16 +47,10 @@
             font-size: 14px;
             font-weight: 500;
         }
+        &:hover {
+            transform: scale(1.02);
+            filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
+        }
 }
 
-.heart-full {
-    opacity: 0;
-    transition: all 1.2s ease-out;
-    
-    &:hover {
-        opacity: 1;
-        background-image: variables.$btn-violet;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-}
+

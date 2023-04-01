@@ -1,3 +1,7 @@
-@mixin hover-shadow {
-    box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+@mixin banner {
+    width: 100%;
+    margin: 0 auto;
+    height: 275px;
+    background-size: cover;   
+    background-position: center ;
 }

@@ -1,11 +1,20 @@
+@use "../utils/" as *;
 
-
-.banner {
-    width: 100%;
-    margin: 0 auto;
-    height: 275px;
-    background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    background-size: cover;
+.banner-1 {
+    @include banner ;
+    background-image: url(map-get($img-banner, palette-du-gout));
+}
+.banner-2 {
+    @include banner ;
+    background-image: url(map-get($img-banner, note-enchantee));
+}
+.banner-3 {
+    @include banner ;
+    background-image: url(map-get($img-banner, a-la-francaise));
+}
+.banner-4 {
+    @include banner ;
+    background-image: url(map-get($img-banner, delice-des-sens));
 }
 
 .menu {
@@ -20,44 +29,26 @@
         width: 150px;
         margin-top: 40px;
     }
-}
-.menu-title  {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 20px 10px 10px ;
-    align-items: center;
-    h1 {
-        font-family: variables.$font-title;
-        font-size: 28px;
-        font-weight: 400;
+    @include tablet {
+        width: 60%;
+        margin: -40px auto 0 auto;
     }
-    
-    
 }
 
-.menu-subtitle h2 {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 300;
-    padding: 20px 10px;
-    line-height: 2em;
-    &::after {
-        content: '';
-        background: variables.$tertiary-color;
-        width: 40px;
-        height: 4px;
-        display: block;
-    }
-}
 .menu-plats {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    @include tablet {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 .menu-plats-cards {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    animation: FadeIn 1s ;
+    max-width: 100%;
+
 }
 

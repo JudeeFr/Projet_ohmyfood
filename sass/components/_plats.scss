@@ -1,3 +1,4 @@
+@use "../utils/" as *;
 
 .plat {
     background-color: white;
@@ -30,7 +31,7 @@
         align-self: flex-end;
         flex-wrap: nowrap;
     }
-    &__confirmation {
+    &__check {
         background-color: #99E2D0;
         color: white;
         font-size: 18px;
@@ -48,15 +49,20 @@
         }           
     }
     &:hover  {
-        @include hover-shadow;
-
-        .plat__confirmation {
+        box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+        .plat__check {
             margin-right: -1.7rem;
-
             i {
                 transform: rotate(360deg);
             }
         }
-}
-
+    }
+// apparition des plats progressivement
+    @for $i from 1 through 10 {
+        &--#{$i} {
+            animation: FadeIn .8s;
+            animation-delay: nth($delays, $i);
+            animation-fill-mode: both;
+        }
+    }
 }

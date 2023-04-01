@@ -1,10 +1,11 @@
+@use "../utils/" as *;
 
 .fonctionnement {
     padding: 40px 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-        @media (min-width: 768px) {      
+        @include tablet {      
            width: 60%;
            margin: 0 auto;
             &__container {
@@ -25,7 +26,7 @@
             justify-content: space-between;
             align-items: center;
         }  
-        @media (min-width: 768px) {                
+        @include tablet {                
             margin: 0 auto;
             align-items: start;
             padding: 50px 20% 80px 20%;

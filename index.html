@@ -27,8 +27,14 @@
 </head>
 
 <body>
-<div class="main-container">
+    <div class="loader">
+        <span class="loader-anim"></span>
+    </div>
+<div class="main-container" id="content">
+
+    
     <header>
+        
         <div class="logo">
             <img src="img/logo/ohmyfood@2x.svg" alt="logo">          
         </div>
@@ -61,21 +67,21 @@
                 <div class="card-fonctionnement__icone">
                     <i class="fa-solid fa-mobile-screen-button"></i>
                 </div>
-                <div class="card-fonctionnement-text">Choisissez un restaurant</div>
+                <div class="card-fonctionnement__text">Choisissez un restaurant</div>
             </div>
 
             <div class="card-fonctionnement" data-count="2">
                 <div class="card-fonctionnement__icone">
                     <i class="fa-solid fa-list-ul"></i>
                 </div>
-                <div class="card-fonctionnement-text">Composez votre menu</div>
+                <div class="card-fonctionnement__text">Composez votre menu</div>
             </div>
 
             <div class="card-fonctionnement" data-count="3">
                 <div class="card-fonctionnement__icone">
                     <i class="fa-sharp fa-solid fa-store"></i>
                 </div>
-                <div class="card-fonctionnement-text">Dégustez au restaurant</div>
+                <div class="card-fonctionnement__text">Dégustez au restaurant</div>
             </div>
         </div>
 
@@ -171,12 +177,20 @@
             <a href="#"><div class="footer-menu">                                  
                     <p>Mentions légales</p>                
             </div></a>
-            <a href="mailto:contact@openclassrooms.com"><div class="footer-menu">                                   
+            <a href="mailto:contact@ohmyfood.com"><div class="footer-menu">                                   
                     <p>Contact</p>               
             </div></a>
             
         </div>
     </footer>
 </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".loader").fadeOut(5000, function () {
+            $("#content").show();
+        });
+    })
+</script>
 </body>
 </html>
