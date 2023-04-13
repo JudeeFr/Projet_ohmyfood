@@ -1,25 +1,22 @@
 @use "../utils/" as *;
 
 .loader {
-    margin: 0 auto;   
-    max-width: 100%;
-    text-align: center;
+  margin: 0 auto; 
+  position: absolute; 
+  top: 50%;
+  right: 50%;   
+}
+.loader-anim {
+  border: 24px solid;
+  border-color: $primary-color $secondary-color $tertiary-color #F6F6F6;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box; 
+  animation: Loader 1s linear infinite  ;
+  
+}
+#content {
+  display: none;
 }
 
-.loader-anim {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    border: 24px solid;
-    border-color: $primary-color $secondary-color $tertiary-color #F6F6F6;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box; 
-    animation: Loader 2s linear infinite;
-    animation-delay: 0.5s;
-  }
-
-  #content {
-    display: none;
-  }
-
+  

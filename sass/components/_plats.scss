@@ -15,13 +15,16 @@
         display: flex; 
         flex-direction: column;     
         line-height: 1.5em;
-        flex: 2;             
+        flex: 2;     
+        max-width: 80%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;         
     }
     h3 {
         font-size: 16px;
     }
-    &__subtitle {
-        max-width: 75%;
+    &__subtitle, &__title {       
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;       
