@@ -9,7 +9,10 @@
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-top: 33px;
     @include tablet {
-        width: 490px ;
+        width: 450px ;
+    }
+    @include desktop {
+        width: 500px;
     }
         &__content {
             display: flex;
@@ -38,7 +41,10 @@
             border-top-right-radius: 20px;
             border-top-left-radius: 20px;
             @include tablet {
-                width: 490px ;
+                width: 450px ;
+            }
+            @include desktop {
+                width: 500px;
             }
         }
         span {

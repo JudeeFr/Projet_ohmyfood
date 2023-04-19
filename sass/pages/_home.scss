@@ -6,41 +6,51 @@
     flex-wrap: wrap;
     flex-direction: column;
         @include tablet {      
-            width: 60%;
-            margin: 0 auto;
+            padding: 40px 20px;
             flex-wrap: wrap;
         
             &__container {
                 display: flex;
                 flex-wrap: nowrap;
-                justify-content: space-between;           
+                justify-content: center;           
             }        
         }
+    h2 {
+        @include desktop {
+            width: 80%;
+            margin : 0 auto;
+            }
+        } 
 }
  
 .restaurants {
     background-color: #F6F6F6;
-    padding: 50px 5px;   
-    cursor: pointer;     
+    padding: 50px 20px;   
+    cursor: pointer; 
+    h2 {
+        @include desktop {
+            width: 80%;
+            margin : 0 auto;
+        }
+    } 
         &__container {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-        }  
-        @include tablet {                
-            margin: 0 auto;
-            align-items: start;
-            padding: 50px 20% 80px 20%;
-            &__container {               
+            @include tablet {
                 display: flex;  
                 flex-direction: row;             
                 flex-wrap: wrap;
                 justify-content: space-around;
-                gap: 10px;           
-            }        
-            
-        } 
+                gap: 10px;
+                
+            }
+            @include desktop {
+                width: 80%;
+                margin : 0 auto;
+            }
+        }  
 }
 
 
